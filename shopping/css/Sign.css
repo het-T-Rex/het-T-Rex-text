@@ -1,0 +1,124 @@
+﻿/*里面用一个大的div剧中，然后是小li，li里面label（转行内块，文字剧右对齐）input，span（里面嵌套i）*/
+.header {
+    margin-top: 25px;
+    height: 55px;
+    background-color: #ffffff;
+}
+
+    .header div {
+        float: left;
+    }
+
+    .header .logo {
+        height: 55px;
+        width: 220px;
+        background-color: aqua;
+        background-image: url(../images/a.png);
+    }
+.main {
+    height: 545px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    border: 1px solid #dfdfdf;
+    border-top: 2px solid #b1191a;
+}
+    .main .main_register {
+        height: 42px;
+        background-color: #ececec;
+        margin-top: 20px;
+        border: 1px solid #dfdfdf;
+        color: #333333;
+        font-size: 16px;
+        line-height: 42px;
+        text-indent: 10px;
+    }
+        .main .main_register .main_sign{
+            float: right;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+            .main .main_register .main_sign a {
+                color: #c81623;
+            }
+    .main input {
+        text-indent: 10px;
+    }
+    .main input[type=tel] {
+        height: 36px;
+        width: 240px;
+        border: 1px solid #999999;
+        outline: none;
+    }
+    .main .phone {
+        color: #4d4d4d;
+        font-size: 14px;
+       margin: 55px 0 0 400px;
+    }
+        .main .phone span {
+            color: #df3033;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+            .main .phone span i {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/aw.png);
+                vertical-align: middle;
+                margin-top: -3px;
+            }
+            .main .phone_A {
+                margin: 20px 0 0px 372px;
+            }
+    .main .phone_B {
+        margin: 20px 0 0px 386px;
+    }
+    .main .mestery {
+        width: 162px;
+        height: 13px;
+        color: #b9b9b9;
+        margin: 10px 0 20px 537px;
+    }
+    .main .mestery  li {
+        float: right;
+        background-image: url(../images/at.png);
+        width: 34px;
+        height: 13px;
+        margin: 2px 0 0 1px;
+    }
+        .main .mestery li:nth-of-type(3) {
+            margin-left: 10px;
+        }
+        .main .mestery li:nth-of-type(2) {
+            background-image: url(../images/au.png);
+        }
+        .main .mestery li:nth-of-type(1) {
+            background-image: url(../images/av.png);
+        }
+        .main .mestery p {
+            float: left;
+        }
+
+        .main .select {
+            margin: 43px 0 0 450px;
+           
+        }
+            .main .select input[type="checkbox"] {
+                vertical-align: middle;
+            }
+            .main .select a {
+                color: #1ba1e6;
+            }
+    .main .finish_register {
+        width: 200px;
+        height: 34px;
+        background-color: #c81623;
+        font-size: 14px;
+        color: #f8eaea;
+        margin: 50px 40% 0;
+        border: 0;
+    }
+.footer {
+    background-color: #fff;
+}
+            

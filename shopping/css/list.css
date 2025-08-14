@@ -1,0 +1,153 @@
+﻿/*字体符号申明*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.header .logo::after {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 31px;
+    border-left: 1px solid #b1191a;
+   background-image: url(../images/am.png);
+    margin: 10px 0 0 180px;
+    padding: 0 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nav_A {
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    border-bottom: 2px solid #b1191a;
+    margin-top: 24px;
+    font-size: 16px;
+}
+.nav_A li a{
+    display: block;
+    float: left;
+    padding-right: 46px;
+}
+    .nav_A li:nth-of-type(1) a,
+    .nav_A li:nth-of-type(2) a,
+    .nav_A li:nth-of-type(3) a{
+        float: left;
+/*        padding: 0;*/
+        font-size: 16px;
+        font-weight: 700;
+                color: #000000;
+/*        margin-right: 40px;*/
+    }
+body .nav_A li:nth-of-type(1) a{
+/*    padding-right: 0;*/
+    margin-left: 28px; 
+}
+    body .nav_A li:nth-of-type(12) a {
+        padding: 0;
+    }
+    body .nav_A li:nth-of-type(12) a::after {
+        float: right;
+        content: '';
+        display: block;
+        font-family: 'icomoon';
+    }
+    .shoes {
+        position: relative;
+        height: 120px;
+        background-color: aquamarine;
+        background-image: url(../images/an.png);
+        text-align: center;
+    }
+    .shoes h3 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        padding-top: 80px;
+    }
+        .shoes .line_one,
+        .shoes .line_tow {
+            position: absolute;
+            background-color: #000000;
+            width: 50px;
+            height: 1px;
+            top: 88px;
+        }
+        .shoes .line_one {
+            left: 497px;
+        }
+        .shoes .line_tow {
+            left: 655px;
+        }
+.shopping {
+    height: 1386px;
+    margin-bottom: 282px;
+    margin-top: 25px;
+}
+.shopping li {
+    float: left;
+    width: 291px;
+    height: 462px;
+}
+    .shopping li:hover {
+        border: 1px solid #b1191a;
+                border-bottom: 0;
+/*                transition: none !important;*/
+    }
+    .shopping li p {
+        margin-top: 5px;
+        color: #a3a3a3;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .shopping li div h3 {
+        float: left;
+        padding-left: 5px;
+        
+    }
+        .shopping li div h3:nth-of-type(1) {
+            font-size: 18px;
+            color: #e60012;
+            padding-top: 17px;
+        }
+        .shopping li div h3:nth-of-type(2) {
+            font-size: 12px;
+            color: #a4a4a4;
+            padding-top: 23px;
+            text-decoration: line-through;
+        }
+    .shopping li .box {
+        width: 132px;
+        height: 12px;
+        border-radius: 6px;
+        border: 1px solid #ed282e;
+        margin: 50px 0 0 73px;
+    }
+        .shopping li .box::before {
+            float: left;
+            font-size: 14px;
+            color: #8c8c8c;
+            content: '已售87%';
+                margin: -7px 0 0 -68px;
+        }
+        .shopping li .box div {
+            width: 116px;
+            height: 10px;
+            background-color: #ed282e;
+            border-radius: 5px 0 0 5px;
+        }
+    .shopping li .buy {
+        display: block;
+        height: 50px;
+        width: 291px;
+        background-color: #b1191a;
+        margin-top: 12px;
+        text-align: center;
+        line-height: 50px;
+        color: #ffffff;
+        font-size: 18px;
+        font-family: 'SimSun';
+    }

@@ -1,0 +1,143 @@
+﻿.clearfix:after before,.clearfix:after {
+        content: "";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .clearfix {
+        *zoom: 1;
+    }
+.register {
+    /*    position: relative;*/
+    height: 490px;
+    background-color: #7f00ff;
+    background-image: url(../images/ap.png);
+    background-repeat: no-repeat;
+}
+    .register_A {
+        overflow: hidden;
+        height: 490px;
+    }
+.register .register_A .register_B {
+    width: 380px;
+    height: 365px;
+    background-color: #fff;
+    margin: 63px 0 0 706px;
+}
+    .register .register_A .register_B .title {
+        width: 380px;
+        height: 56px;
+    }
+    .register .register_A .register_B .title li {
+        color: #666666;
+        font-size: 18px;
+        float: left;
+        margin: 19px 0 0 45px;
+    }
+        .register .register_A .register_B .title li:nth-of-type(2) {
+            margin: 0;
+            margin: 23px 65px 0 65px;
+            width: 1px;
+            height: 20px;
+            background-color: #ededed;
+        }
+        .register .register_A .register_B .title li:nth-of-type(3) {
+            margin-left: 0;
+        }
+ .w_a {
+        width: 303px;
+        margin: 0 auto; 
+    }
+.register .register_A .register_B .table {
+    height: 27px;
+    background-color: #fffdee;
+    margin-top: 7px;
+    border: 1px solid #f5eecf;
+/*    text-align: center;*/
+    line-height: 27px;
+    padding-left: 8px;
+}
+.register .register_A .register_B .SR {
+    float: right;
+    outline: none;
+    height: 34px;
+    width: 264px;
+    border: 1px solid #bbbaba;
+    text-indent: 10px;
+    color: #b3b3b3;
+    /*border-bottom: 1px solid #bbbaba;*/
+}
+.register .register_A .register_B .label_logo {
+/*    position: relative;*/
+    height: 36px;
+    width: 303px;
+    border: 1px solid #bbbaba;
+    margin: 10px auto 0;
+}
+.register .register_A .register_B .label_logo_B {
+    margin-top: 17px;
+ 
+}
+.register .register_A .register_B .mestry {
+    color: #b3b3b3;
+    font-family: 'SimSun';
+    margin-top: 20px;
+}
+    .register .register_A .register_B .mestry input[type="checkbox"] {
+        vertical-align: middle;
+    }
+    .register .register_A .register_B li {
+        float: left;
+    }
+.register .register_A .register_B .mestry a {
+    display: block;
+    float: left;
+    color: #333333;
+    margin-left: 173px;
+}
+.register .register_A .register_B input[type="radio"]{
+/*    padding-right: 5px;*/
+}
+.register .register_A .register_B .finding {
+    display: block;
+    height: 42px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 42px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 22px;
+}
+.register .register_A .register_B .more_logo {
+    height: 32px;
+    margin: 32px 0 0 38px;
+}
+    .register .register_A .register_B .more_logo li a{
+        display: block;
+        float: left;
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        margin-right: 20px;
+        background-image: url(../images/as.png);
+    }
+    .register .register_A .register_B .more_logo li:nth-of-type(1) a{
+      background-position: -19px -8px;
+    }
+        .register .register_A .register_B .more_logo li:nth-of-type(2) a{
+            background-position: -71px -8px;
+        }
+        .register .register_A .register_B .more_logo li:nth-of-type(3) a{
+            background-position: -123px -8px;
+        }
+        .register .register_A .register_B .more_logo li:nth-of-type(4) a{
+            background-position: -175px -8px;
+        }
+    .register .register_A .register_B .more_logo a {
+        display: block;
+        float: right;
+        font-size: 14px;
+        margin-right: 8px;
+        color: #1474af;
+    }

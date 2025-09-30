@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>二手书集市 - 首页</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">二手书集市</a>
+            <nav class="nav">
+                <a href="index.html" class="active">首页</a>
+                <a href="sell.html">发布</a>
+                <a href="favorites.html">收藏</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="toolbar">
+            <h1>发现好书</h1>
+            <div class="search">
+                <input id="searchInput" type="search" placeholder="搜索书名 / 作者 / 校区" />
+                <button id="searchBtn" class="btn">搜索</button>
+            </div>
+        </section>
+
+        <section id="grid" class="grid"></section>
+        <div id="empty" class="empty hidden">未找到相关书籍</div>
+    </main>
+
+    <footer class="site-footer">© <span id="year"></span> 二手书集市</footer>
+
+    <script src="assets/data.js" charset="utf-8"></script>
+    <script src="assets/app.js" charset="utf-8"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function render(books) {
+            const grid = document.getElementById('grid');
+            const empty = document.getElementById('empty');
+            grid.innerHTML = '';
+            if (!books.length) {
+                empty.classList.remove('hidden');
+                return;
+            }
+            empty.classList.add('hidden');
+            for (const b of books) {
+                const card = createBookCard(b);
+                grid.appendChild(card);
+            }
+            wireFavoriteButtons();
+        }
+
+        // 初始渲染
+        render(sampleBooks);
+
+        // 搜索
+        document.getElementById('searchBtn').addEventListener('click', () => {
+            const kw = document.getElementById('searchInput').value || '';
+            render(searchBooks(kw));
+        });
+        document.getElementById('searchInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') document.getElementById('searchBtn').click();
+        });</script>
+</body>
+</html>

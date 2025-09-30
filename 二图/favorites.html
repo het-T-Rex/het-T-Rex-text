@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>二手书集市 - 收藏</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">二手书集市</a>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="sell.html">发布</a>
+                <a href="favorites.html" class="active">收藏</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>我的收藏</h1>
+        <section id="grid" class="grid"></section>
+        <div id="empty" class="empty hidden">还没有收藏，去首页逛逛吧～</div>
+    </main>
+
+    <footer class="site-footer">© <span id="year"></span> 二手书集市</footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/app.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();
+
+		function render() {
+			const grid = document.getElementById('grid');
+			const empty = document.getElementById('empty');
+			grid.innerHTML = '';
+			const favs = getFavorites();
+			const books = sampleBooks.filter(b => favs.includes(b.id));
+			if (!books.length) {
+				empty.classList.remove('hidden');
+				return;
+			}
+			empty.classList.add('hidden');
+			for (const b of books) {
+				const card = createBookCard(b, true);
+				grid.appendChild(card);
+			}
+			wireFavoriteButtons(() => render());
+		}
+
+		render();</script>
+</body>
+</html>
